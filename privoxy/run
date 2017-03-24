@@ -1,0 +1,7 @@
+docker run -d \
+--restart always \
+-v /etc/localtime:/etc/localtime:ro \
+--link torproxy:torproxy \
+-p 8118:8118 \
+--name privoxy \
+privoxy
